@@ -1,5 +1,62 @@
 [
   {
+    "name": "Zip directory",
+    "cmdText": "zip -r <zip_file> <dir>",
+    "numParams": 2
+  },
+  {
+    "name": "Count words in file",
+    "cmdText": "wc -w <file>",
+    "numParams": 1
+  },
+  {
+    "name": "Convert audio format",
+    "cmdText": "avconv -i <in_file> <out_file>",
+    "keywords": "sound file format webm mp3",
+    "numParams": 2
+  },
+  {
+    "name": "Convert image format",
+    "cmdText": "convert <in_file> <out_file>",
+    "keywords": "png jpg jpeg gif file",
+    "numParams": 2
+  },
+  {
+    "name": "Kill LibreOffice",
+    "cmdText": "killall soffice.bin",
+    "keywords": "end terminate",
+    "numParams": 0
+  },
+  {
+    "name": "Remove audio from video",
+    "cmdText": "ffmpeg -i <in_file> -c copy -an <out_file>",
+    "keywords": "fps view see",
+    "numParams": 2
+  },
+  {
+    "name": "Get frames per second of video file",
+    "cmdText": "ffmpeg -i <filename>",
+    "keywords": "fps view see",
+    "numParams": 1
+  },
+  {
+    "name": "See version of installed pip package",
+    "cmdText": "pip show <package>",
+    "keywords": "python pip3 view get",
+    "numParams": 1
+  },
+  {
+    "name": "Count lines of code in project",
+    "cmdText": "find . -name '*.<code_file_extension>' | xargs wc -l",
+    "keywords": "total all entire folder directory recursive",
+    "numParams": 1
+  },
+  {
+    "name": "Pretty print JSON",
+    "cmdText": "cat <json file> | python -m json.tool",
+    "numParams": 1
+  },
+  {
     "name": "Count files [menu]",
     "subtasks": [
       {

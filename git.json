@@ -66,6 +66,12 @@
     "name": "Log [menu]",
     "subtasks": [
       {
+        "name": "Show files changed in last 2 days",
+        "keywords": "log modified hours time recent previous see view",
+        "cmdText": "git log --pretty=format: --name-only --since=\"2 days ago\" | sort | uniq",
+        "numParams": 0
+      },
+      {
         "name": "See contents of last commit",
         "keywords": "display get view previous single one",
         "cmdText": "git log -n1 -p",
@@ -182,6 +188,11 @@
   {
     "name": "Diff [menu]",
     "subtasks": [
+      {
+        "name": "Preview merge",
+        "cmdText": "git diff ...<otherbranch>",
+        "numParams": 1
+      },
       {
         "name": "Diff working copy and HEAD",
         "cmdText": "git diff",
