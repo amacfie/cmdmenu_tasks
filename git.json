@@ -34,11 +34,6 @@
     "numParams": 0
   },
   {
-    "name": "Show log for specific file",
-    "cmdText": "git log -p <file>",
-    "keywords": "single"
-  },
-  {
     "name": "Stage part of a file",
     "cmdText": "git add -p <file>",
     "keywords": "add patch single"
@@ -75,6 +70,11 @@
         "keywords": "display get view previous single one",
         "cmdText": "git log -n1 -p",
         "numParams": 0
+      },
+      {
+        "name": "Show log for specific file",
+        "cmdText": "git log -p <file>",
+        "keywords": "single"
       }
     ]
   },
