@@ -158,7 +158,7 @@
       },
       {
         "name": "Get main local IP address",
-        "cmdText": "ip route get 8.8.8.8 | awk '{print $NF; exit}'",
+        "cmdText": "ip route get 8.8.8.8 | head -1 | cut -d' ' -f7",
         "keywords": "see display private ip",
         "numParams": 0
       },
