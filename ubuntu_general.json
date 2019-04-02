@@ -94,6 +94,12 @@
     "name": "dpkg [menu]",
     "subtasks": [
       {
+        "name": "Test if a package is installed",
+        "cmdText": "dpkg -l | grep <package_name>",
+        "keywords": "query exists present",
+        "numParams": 1
+      },
+      {
         "name": "Show where a package was installed to",
         "cmdText": "dpkg -L <package>",
         "keywords": "files locations",
