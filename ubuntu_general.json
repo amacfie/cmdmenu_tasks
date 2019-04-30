@@ -1,5 +1,23 @@
 [
   {
+    "name": "Cut video",
+    "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -async 1 <out_file>",
+    "keywords": "crop segment interval",
+    "numParams": 4
+  },
+  {
+    "name": "Search in files with a certain extension",
+    "cmdText": "ag -G '\\.<extension>$' '<search_string>'",
+    "keywords": "grep",
+    "numParams": 2
+  },
+  {
+    "name": "Concatenate video files",
+    "cmdText": "ffmpeg -i <file1> -i <file2> -i <file3> -filter_complex \"[0:v] [0:a] [1:v] [1:a] [2:v] [2:a] concat=n=3:v=1:a=1 [v] [a]\" -map \"[v]\" -map \"[a]\" <out_file>",
+    "keywords": "join merge mp4 mkv avi movie",
+    "numParams": 4
+  },
+  {
     "name": "Zip directory",
     "cmdText": "zip -r <zip_file> <dir>",
     "numParams": 2
