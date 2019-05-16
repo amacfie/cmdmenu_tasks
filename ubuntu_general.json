@@ -1,5 +1,11 @@
 [
   {
+    "name": "Forward port via ssh",
+    "cmdText": "ssh -L <local_port>:<dest_host>:<dest_port> <ssh_server>",
+    "keywords": "proxy",
+    "numParams": 4
+  },
+  {
     "name": "Print lines appended to a file in real time",
     "cmdText": "tail -F <file>",
     "keywords": "tail watch live update log",
