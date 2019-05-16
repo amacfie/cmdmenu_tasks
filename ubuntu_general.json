@@ -1,5 +1,11 @@
 [
   {
+    "name": "Print lines appended to a file in real time",
+    "cmdText": "tail -F <file>",
+    "keywords": "tail watch live update log",
+    "numParams": 1
+  },
+  {
     "name": "Make video from image and audio",
     "cmdText": "ffmpeg -loop 1 -r 1 -i <image_file> -i <audio_file> -c:a copy -shortest output.avi",
     "keywords": "youtube loop mp3 create",
