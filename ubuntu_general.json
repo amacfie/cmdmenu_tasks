@@ -1,5 +1,11 @@
 [
   {
+    "name": "Make video from image and audio",
+    "cmdText": "ffmpeg -loop 1 -r 1 -i <image_file> -i <audio_file> -c:a copy -shortest output.avi",
+    "keywords": "youtube loop mp3 create",
+    "numParams": 2
+  },
+  {
     "name": "Cut video",
     "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -async 1 <out_file>",
     "keywords": "crop segment interval",
