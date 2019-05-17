@@ -1,9 +1,5 @@
 [
   {
-    "name": "Resolve merge conflicts",
-    "cmdText": "git diff\ngit add <resolved_files>\ngit rebase --continue"
-  },
-  {
     "name": "Rebase one commit (or branch) to a cousin",
     "cmdText": "git rebase <dest_commit> <src_commit>"
   },
