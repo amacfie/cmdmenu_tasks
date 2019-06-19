@@ -1,17 +1,26 @@
 [
   {
+    "name": "Push tag to remote",
+    "cmdText": "git push <remote> <tag_name>",
+    "keywords": "sync",
+    "numParams": 2
+  },
+  {
     "name": "Rebase one commit (or branch) to a cousin",
-    "cmdText": "git rebase <dest_commit> <src_commit>"
+    "cmdText": "git rebase <dest_commit> <src_commit>",
+    "numParams": 2
   },
   {
     "name": "Rename branch",
     "keywords": "local",
-    "cmdText": "git branch -m <old_branch> <new_branch>"
+    "cmdText": "git branch -m <old_branch> <new_branch>",
+    "numParams": 2
   },
   {
     "name": "Remove file from git but don't delete",
     "keywords": "stop track tracking ignore",
-    "cmdText": "git rm --staged <file>"
+    "cmdText": "git rm --staged <file>",
+    "numParams": 1
   },
   {
     "name": "Commit with no message",
