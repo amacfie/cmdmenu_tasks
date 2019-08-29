@@ -1,5 +1,11 @@
 [
   {
+    "name": "Get hash of HEAD",
+    "cmdText": "git rev-parse --short HEAD",
+    "keywords": "sha sha1 current commit",
+    "numParams": 0
+  },
+  {
     "name": "Push tag to remote",
     "cmdText": "git push <remote> <tag_name>",
     "keywords": "sync",
