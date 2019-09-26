@@ -1,5 +1,11 @@
 [
   {
+    "name": "Print range of lines from file",
+    "cmdText": "sed -n <start_line>,<end_line>p <file>",
+    "keywords": "write echo line single individual one set part interval",
+    "numParams": 3
+  },
+  {
     "name": "Forward port via ssh",
     "cmdText": "ssh -L <local_port>:<dest_host>:<dest_port> <ssh_server>",
     "keywords": "proxy",
