@@ -1,6 +1,12 @@
 [
   {
-    "name": "Print range of lines from file",
+    "name": "Show default gateway",
+    "cmdText": "ip route | grep default",
+    "keywords": "router lan local network",
+    "numParams": 0
+  },
+  {
+    "name": "Echo range of lines from file",
     "cmdText": "sed -n <start_line>,<end_line>p <file>",
     "keywords": "write echo line single individual one set part interval",
     "numParams": 3
@@ -12,7 +18,7 @@
     "numParams": 4
   },
   {
-    "name": "Print lines appended to a file in real time",
+    "name": "Show lines appended to a file in real time",
     "cmdText": "tail -F <file>",
     "keywords": "tail watch live update log",
     "numParams": 1
