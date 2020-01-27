@@ -1,5 +1,11 @@
 [
   {
+    "name": "Show version of installed apt package",
+    "cmdText": "show version of pkg: `apt list <pkg_name>`",
+    "keywords": "see display get info print echo current",
+    "numParams": 1
+  },
+  {
     "name": "Set vi keybindings in bash",
     "cmdText": "set -o vi",
     "keywords": "vim keys shortcut configure",
