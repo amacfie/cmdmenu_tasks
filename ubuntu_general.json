@@ -1,5 +1,11 @@
 [
   {
+    "name": "Show processing using the most memory",
+    "cmdText": "ps aux --sort=-%mem | head -10",
+    "keywords": "info see display get print echo hog sort ram",
+    "numParams": 0
+  },
+  {
     "name": "Show version of installed apt package",
     "cmdText": "apt list <pkg_name>",
     "keywords": "see display get info print echo current",
