@@ -1,7 +1,13 @@
 [
   {
-    "name": "Show processing using the most memory",
-    "cmdText": "ps aux --sort=-%mem | head -10",
+    "name": "Hardcode subtitles",
+    "cmdText": "ffmpeg -i <video_file> -vf \"subtitles=<subtitle_file>\" <out_file>",
+    "keywords": "video subs file srt",
+    "numParams": 3
+  },
+  {
+    "name": "Show 10 processes using the most memory",
+    "cmdText": "ps aux --sort=-%mem | head -11",
     "keywords": "info see display get print echo hog sort ram",
     "numParams": 0
   },
@@ -12,7 +18,7 @@
     "numParams": 1
   },
   {
-    "name": "Set vi keybindings in bash",
+    "name": "Set vi keybindings (in bash)",
     "cmdText": "set -o vi",
     "keywords": "vim keys shortcut configure",
     "numParams": 0
