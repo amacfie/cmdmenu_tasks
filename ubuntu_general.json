@@ -1,5 +1,11 @@
 [
   {
+    "name": "Get exit status of last command",
+    "cmdText": "echo $?",
+    "keywords": "see info show recent code success fail",
+    "numParams": 0
+  },
+  {
     "name": "Hardcode subtitles",
     "cmdText": "ffmpeg -i <video_file> -vf \"subtitles=<subtitle_file>\" <out_file>",
     "keywords": "video subs file srt",
