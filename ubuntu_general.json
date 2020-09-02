@@ -1,5 +1,11 @@
 [
   {
+    "name": "Run vim with default configuration",
+    "cmdText": "vim --clean",
+    "keywords": "file blank empty nvim neovim",
+    "numParams": 0
+  },
+  {
     "name": "Get exit status of last command",
     "cmdText": "echo $?",
     "keywords": "see info show recent code success fail",
