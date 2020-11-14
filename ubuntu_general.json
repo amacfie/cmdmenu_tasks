@@ -1,5 +1,52 @@
 [
   {
+    "name": "ffmpeg [menu]",
+    "subtasks": [
+      {
+        "name": "Remove audio from video",
+        "cmdText": "ffmpeg -i <in_file> -c copy -an <out_file>",
+        "keywords": "fps view see",
+        "numParams": 2
+      },
+      {
+        "name": "Get frames per second of video file",
+        "cmdText": "ffmpeg -i <filename>",
+        "keywords": "fps view see",
+        "numParams": 1
+      },
+      {
+        "name": "Convert video to mp3",
+        "cmdText": "ffmpeg -i <video_file> -q:a 0 -map a out.mp3",
+        "keywords": "audio strip",
+        "numParams": 1
+      },
+      {
+        "name": "Hardcode subtitles",
+        "cmdText": "ffmpeg -i <video_file> -vf \"subtitles=<subtitle_file>\" <out_file>",
+        "keywords": "video subs file srt",
+        "numParams": 3
+      },
+      {
+        "name": "Make video from image and audio",
+        "cmdText": "ffmpeg -loop 1 -r 1 -i <image_file> -i <audio_file> -c:a copy -shortest output.avi",
+        "keywords": "youtube loop mp3 create",
+        "numParams": 2
+      },
+      {
+        "name": "Cut video",
+        "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -async 1 <out_file>",
+        "keywords": "crop segment interval",
+        "numParams": 4
+      },
+      {
+        "name": "Concatenate video files",
+        "cmdText": "ffmpeg -i <file1> -i <file2> -i <file3> -filter_complex \"[0:v] [0:a] [1:v] [1:a] [2:v] [2:a] concat=n=3:v=1:a=1 [v] [a]\" -map \"[v]\" -map \"[a]\" <out_file>",
+        "keywords": "join merge mp4 mkv avi movie",
+        "numParams": 4
+      }
+    ]
+  },
+  {
     "name": "Run vim with default configuration",
     "cmdText": "vim --clean",
     "keywords": "file blank empty nvim neovim",
@@ -10,12 +57,6 @@
     "cmdText": "echo $?",
     "keywords": "see info show recent code success fail",
     "numParams": 0
-  },
-  {
-    "name": "Hardcode subtitles",
-    "cmdText": "ffmpeg -i <video_file> -vf \"subtitles=<subtitle_file>\" <out_file>",
-    "keywords": "video subs file srt",
-    "numParams": 3
   },
   {
     "name": "Show 10 processes using the most memory",
@@ -60,28 +101,10 @@
     "numParams": 1
   },
   {
-    "name": "Make video from image and audio",
-    "cmdText": "ffmpeg -loop 1 -r 1 -i <image_file> -i <audio_file> -c:a copy -shortest output.avi",
-    "keywords": "youtube loop mp3 create",
-    "numParams": 2
-  },
-  {
-    "name": "Cut video",
-    "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -async 1 <out_file>",
-    "keywords": "crop segment interval",
-    "numParams": 4
-  },
-  {
     "name": "Search in files with a certain extension",
     "cmdText": "ag -G '\\.<extension>$' '<search_string>'",
     "keywords": "grep",
     "numParams": 2
-  },
-  {
-    "name": "Concatenate video files",
-    "cmdText": "ffmpeg -i <file1> -i <file2> -i <file3> -filter_complex \"[0:v] [0:a] [1:v] [1:a] [2:v] [2:a] concat=n=3:v=1:a=1 [v] [a]\" -map \"[v]\" -map \"[a]\" <out_file>",
-    "keywords": "join merge mp4 mkv avi movie",
-    "numParams": 4
   },
   {
     "name": "Zip directory",
@@ -110,18 +133,6 @@
     "cmdText": "killall soffice.bin",
     "keywords": "end terminate",
     "numParams": 0
-  },
-  {
-    "name": "Remove audio from video",
-    "cmdText": "ffmpeg -i <in_file> -c copy -an <out_file>",
-    "keywords": "fps view see",
-    "numParams": 2
-  },
-  {
-    "name": "Get frames per second of video file",
-    "cmdText": "ffmpeg -i <filename>",
-    "keywords": "fps view see",
-    "numParams": 1
   },
   {
     "name": "See version of installed pip package",
