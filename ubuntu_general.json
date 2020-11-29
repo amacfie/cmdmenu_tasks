@@ -3,9 +3,15 @@
     "name": "ffmpeg [menu]",
     "subtasks": [
       {
+        "name": "Reverse video file",
+        "cmdText": "ffmpeg -i <in_file> -vf reverse -af areverse <out_file>",
+        "keywords": "backwards convert",
+        "numParams": 2
+      },
+      {
         "name": "Remove audio from video",
         "cmdText": "ffmpeg -i <in_file> -c copy -an <out_file>",
-        "keywords": "fps view see",
+        "keywords": "strip mute track",
         "numParams": 2
       },
       {
@@ -17,7 +23,7 @@
       {
         "name": "Convert video to mp3",
         "cmdText": "ffmpeg -i <video_file> -q:a 0 -map a out.mp3",
-        "keywords": "audio strip",
+        "keywords": "audio strip track",
         "numParams": 1
       },
       {
