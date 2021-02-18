@@ -53,6 +53,12 @@
     ]
   },
   {
+    "name": "Get name of running terminal",
+    "cmdText": "ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)",
+    "keywords": "see info show view emulator",
+    "numParams": 0
+  },
+  {
     "name": "Run vim with default configuration",
     "cmdText": "vim --clean",
     "keywords": "file blank empty nvim neovim",
