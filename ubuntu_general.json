@@ -486,8 +486,8 @@
   },
   {
     "name": "Launch HTTP file server here",
-    "cmdText": "python -m SimpleHTTPServer",
-    "keywords": "web start serve",
+    "cmdText": "python3 -m http.server --bind 127.0.0.1 8000",
+    "keywords": "web start serve static listen",
     "numParams": 0
   },
   {
