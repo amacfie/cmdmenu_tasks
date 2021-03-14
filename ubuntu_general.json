@@ -235,12 +235,6 @@
     "name": "Python virtual environments [menu]",
     "subtasks": [
       {
-        "name": "Delete python virtual environment",
-        "cmdText": "rmvirtualenv <project_name>",
-        "keywords": "remove virtualenv",
-        "numParams": 1
-      },
-      {
         "name": "Deactivate python virtual environment",
         "cmdText": "deactivate",
         "keywords": "unload end exit virtualenv",
@@ -248,13 +242,13 @@
       },
       {
         "name": "Activate python virtual environment",
-        "cmdText": "workon <project_name>",
+        "cmdText": "source <venv_dir>/bin/activate",
         "keywords": "load work on workon enter virtualenv",
         "numParams": 1
       },
       {
         "name": "Create python virtual environment",
-        "cmdText": "mkvirtualenv -p <python_executable> <project_name>",
+        "cmdText": "<python> -m venv <venv_dir>",
         "keywords": "virtualenv mkvirtualenv",
         "numParams": 2
       }
