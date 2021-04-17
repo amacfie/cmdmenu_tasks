@@ -59,6 +59,12 @@
     "numParams": 0
   },
   {
+    "name": "Stop all docker containers",
+    "cmdText": "sudo docker stop $(sudo docker ps -q)",
+    "keywords": "kill terminate",
+    "numParams": 0
+  },
+  {
     "name": "Run vim with default configuration",
     "cmdText": "vim --clean",
     "keywords": "file blank empty nvim neovim",
