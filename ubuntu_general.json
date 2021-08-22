@@ -89,6 +89,12 @@
     "numParams": 1
   },
   {
+    "name": "Get window's process ID by clicking it",
+    "cmdText": "xprop _NET_WM_PID | cut -d' ' -f3",
+    "keywords": "see find pid kill x select mouse",
+    "numParams": 0
+  },
+  {
     "name": "Set vi keybindings (in bash)",
     "cmdText": "set -o vi",
     "keywords": "vim keys shortcut configure",
