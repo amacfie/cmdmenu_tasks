@@ -1,5 +1,22 @@
 [
   {
+    "name": "nix [menu]",
+    "subtasks": [
+      {
+        "name": "Delete old NixOS generations",
+        "cmdText": "sudo nix-collect-garbage -d",
+        "numParams": 0,
+        "keywords": "clear free remove"
+      },
+      {
+        "name": "Upgrade nix packages (don't change channel)",
+        "cmdText": "sudo nix-channel --update && sudo nixos-rebuild switch",
+        "numParams": 0,
+        "keywords": "update"
+      }
+    ]
+  },
+  {
     "name": "ffmpeg [menu]",
     "subtasks": [
       {
@@ -89,12 +106,6 @@
     "numParams": 0
   },
   {
-    "name": "Show version of installed apt package",
-    "cmdText": "apt list <pkg_name>",
-    "keywords": "see display get info print echo current",
-    "numParams": 1
-  },
-  {
     "name": "Get window's process ID by clicking it",
     "cmdText": "xprop _NET_WM_PID | cut -d' ' -f3",
     "keywords": "see find pid kill x select mouse",
@@ -115,7 +126,7 @@
   {
     "name": "Echo range of lines from file",
     "cmdText": "sed -n <start_line>,<end_line>p <file>",
-    "keywords": "write echo line single individual one set part interval",
+    "keywords": "write echo line single individual one set part print interval",
     "numParams": 3
   },
   {
@@ -161,7 +172,7 @@
   {
     "name": "Kill LibreOffice",
     "cmdText": "killall soffice.bin",
-    "keywords": "end terminate",
+    "keywords": "end terminate process",
     "numParams": 0
   },
   {
@@ -201,6 +212,12 @@
   {
     "name": "apt [menu]",
     "subtasks": [
+      {
+        "name": "Show version of installed apt package",
+        "cmdText": "apt list <pkg_name>",
+        "keywords": "see display get info print echo current",
+        "numParams": 1
+      },
       {
         "name": "See apt package version before installing",
         "cmdText": "apt-cache policy <pkg>",
@@ -351,7 +368,7 @@
   },
   {
     "name": "Merge folders",
-    "cmdText": "merge-dirs <src_folder> <dest_folder>",
+    "cmdText": "rsync -avh --progress <src_dir> <dest_dir>",
     "numParams": 2
   },
   {
@@ -511,6 +528,7 @@
   {
     "name": "Quick weather",
     "cmdText": "curl wttr.in",
+    "keywords": "forecast",
     "numParams": 0
   },
   {
