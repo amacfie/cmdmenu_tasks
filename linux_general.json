@@ -20,6 +20,12 @@
     "name": "ffmpeg [menu]",
     "subtasks": [
       {
+        "name": "Merge video file and audio file",
+        "cmdText": "ffmpeg -i <video_file> -i <audio_file> -c:v copy -c:a aac <outpuf_file>",
+        "keywords": "combine",
+        "numParams": 3
+      },
+      {
         "name": "Reverse video file",
         "cmdText": "ffmpeg -i <in_file> -vf reverse -af areverse <out_file>",
         "keywords": "backwards convert",
