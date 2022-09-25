@@ -20,8 +20,14 @@
     "name": "ffmpeg [menu]",
     "subtasks": [
       {
+        "name": "Crop video",
+        "cmdText": "ffmpeg -i <in_file> -filter:v \"crop=<out_w>:<out_h>:<start_x>:<start_y>\" <out_file>",
+        "keywords": "trim",
+        "numParams": 6
+      },
+      {
         "name": "Merge video file and audio file",
-        "cmdText": "ffmpeg -i <video_file> -i <audio_file> -c:v copy -c:a aac <outpuf_file>",
+        "cmdText": "ffmpeg -i <video_file> -i <audio_file> -c:v copy -c:a aac <output_file>",
         "keywords": "combine",
         "numParams": 3
       },
