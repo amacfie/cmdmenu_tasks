@@ -63,7 +63,7 @@
       },
       {
         "name": "Cut video",
-        "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -async 1 <out_file>",
+        "cmdText": "ffmpeg -i <in_file> -ss <start (hh:mm:ss)> -to <end (hh:mm:ss)> -c copy <out_file>",
         "keywords": "crop segment interval",
         "numParams": 4
       },
