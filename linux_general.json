@@ -1,5 +1,28 @@
 [
   {
+    "name": "Mounting drives [menu]",
+    "subtasks": [
+      {
+        "name": "List drive devices",
+        "cmdText": "sudo fdisk -l",
+        "numParams": 0,
+        "keywords": "show info disks all browse storage"
+      },
+      {
+        "name": "Mount drive device",
+        "cmdText": "sudo mount <device_path> <empty_folder>/",
+        "numParams": 2,
+        "keywords": "disk storage"
+      },
+      {
+        "name": "Unmount drive device",
+        "cmdText": "sudo umount <mount_point_folder>",
+        "numParams": 1,
+        "keywords": "disk storage"
+      }
+    ]
+  },
+  {
     "name": "nix [menu]",
     "subtasks": [
       {
