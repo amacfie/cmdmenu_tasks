@@ -1,7 +1,7 @@
 [
   {
     "name": "Check out a specific file from a commit",
-    "cmdText": "git checkout <commit> -- <fil>",
+    "cmdText": "git checkout <commit> -- <file>",
     "keywords": "undo single one previous branch",
     "numParams": 2
   },
