@@ -43,6 +43,12 @@
     "name": "ffmpeg [menu]",
     "subtasks": [
       {
+        "name": "View media file metadata",
+        "cmdText": "ffmpeg -i <file>",
+        "keywords": "see show print echo id3 tags mp3",
+        "numParams": 1
+      },
+      {
         "name": "Crop video",
         "cmdText": "ffmpeg -i <in_file> -filter:v \"crop=<out_w>:<out_h>:<start_x>:<start_y>\" <out_file>",
         "keywords": "trim",

@@ -53,6 +53,7 @@
   {
     "name": "Stage part of a file",
     "cmdText": "git add -p <file>",
+    "numParams": 1,
     "keywords": "add patch single"
   },
   {
@@ -97,6 +98,7 @@
       {
         "name": "Show log for specific file",
         "cmdText": "git log -p <file>",
+        "numParams": 1,
         "keywords": "single"
       }
     ]
@@ -107,11 +109,13 @@
       {
         "name": "Delete branch",
         "keywords": "remove",
+        "numParams": 1,
         "cmdText": "git branch -d <branch>"
       },
       {
         "name": "Delete remote branch",
         "keywords": "remove",
+        "numParams": 2,
         "cmdText": "git push <remote> --delete <branch>"
       }
     ]
@@ -122,10 +126,12 @@
       {
         "name": "Create branch",
         "keywords": "new",
+        "numParams": 1,
         "cmdText": "git checkout -b <branch>"
       },
       {
         "name": "Create branch but don't checkout",
+        "numParams": 1,
         "cmdText": "git branch <branch>"
       }
 
@@ -141,11 +147,13 @@
       },
       {
         "name": "Unstage file",
+        "numParams": 1,
         "cmdText": "git reset HEAD <file>"
       },
       {
         "name": "Change commit message",
         "keywords": "msg amend",
+        "numParams": 1,
         "cmdText": "git rebase -i HEAD~<n>"
       },
       {
@@ -157,11 +165,13 @@
       {
         "name": "Discard some changes to file in working copy",
         "keywords": "checkout revert",
+        "numParams": 0,
         "cmdText": "git checkout -p"
       },
       {
         "name": "Discard changes to file in working copy",
         "keywords": "checkout revert",
+        "numParams": 1,
         "cmdText": "git checkout HEAD <file>"
       },
       {
@@ -173,11 +183,13 @@
       {
         "name": "Undo commits and restore working copy",
         "keywords": "rebase interactive",
+        "numParams": 1,
         "cmdText": "git rebase -i <good_commit>"
       },
       {
         "name": "Undo commits but preserve working copy",
         "keywords": "reset keep",
+        "numParams": 1,
         "cmdText": "git reset <good_commit>"
       }
     ]
@@ -193,11 +205,13 @@
       },
       {
         "name": "Add remote",
+        "numParams": 2,
         "cmdText": "git remote add <shortname> <url>"
       },
       {
         "name": "Remove remote",
         "cmdText": "git remote rm <shortname>",
+        "numParams": 1,
         "keywords": "delete"
       }
     ]
@@ -227,10 +241,12 @@
     "subtasks": [
       {
         "name": "Clone",
+        "numParams": 1,
         "cmdText": "git clone <url>"
       },
       {
         "name": "Clone single branch",
+        "numParams": 2,
         "cmdText": "git clone <url> --branch <branch> --single-branch"
       }
     ]
