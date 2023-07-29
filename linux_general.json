@@ -123,6 +123,12 @@
     "numParams": 0
   },
   {
+    "name": "Run temporary container and go to bash",
+    "cmdText": "sudo docker run -it --rm <image> bash",
+    "keywords": "image docker",
+    "numParams": 1
+  },
+  {
     "name": "Stop all docker containers",
     "cmdText": "sudo docker stop $(sudo docker ps -q)",
     "keywords": "kill terminate",
