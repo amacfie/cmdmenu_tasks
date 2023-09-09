@@ -1,13 +1,48 @@
 [
   {
-    "name": "Mounting drives [menu]",
+    "name": "Power mode [menu]",
     "subtasks": [
       {
-        "name": "List drive devices",
-        "cmdText": "sudo fdisk -l",
+        "name": "Shutdown",
+        "cmdText": "sudo poweroff",
         "numParams": 0,
-        "keywords": "show info disks all browse storage"
+        "keywords": "off"
       },
+      {
+        "name": "Reboot",
+        "cmdText": "sudo reboot",
+        "numParams": 0,
+        "keywords": "restart"
+      },
+      {
+        "name": "Hibernate",
+        "cmdText": "sudo systemctl hibernate",
+        "numParams": 0,
+        "keywords": ""
+      },
+      {
+        "name": "Standby",
+        "cmdText": "sudo systemctl suspend",
+        "numParams": 0,
+        "keywords": "sleep"
+      }
+    ]
+  },
+  {
+    "name": "List drive devices",
+    "cmdText": "sudo fdisk -l",
+    "numParams": 0,
+    "keywords": "show info disks all browse storage"
+  },
+  {
+    "name": "Make bootable USB drive from iso",
+    "cmdText": "sudo dd bs=4M if=<iso_file> of=<drive_device> status=progress oflag=sync",
+    "numParams": 0,
+    "keywords": "stick thumbdrive os"
+  },
+  {
+    "name": "Mounting drives [menu]",
+    "subtasks": [
       {
         "name": "Mount drive device",
         "cmdText": "sudo mount <device_path> <empty_folder>/",
@@ -124,13 +159,13 @@
   },
   {
     "name": "Run temporary container and go to bash",
-    "cmdText": "sudo docker run -it --rm <image> bash",
+    "cmdText": "docker run -it --rm <image> bash",
     "keywords": "image docker",
     "numParams": 1
   },
   {
     "name": "Stop all docker containers",
-    "cmdText": "sudo docker stop $(sudo docker ps -q)",
+    "cmdText": "docker stop $(docker ps -q)",
     "keywords": "kill terminate",
     "numParams": 0
   },
