@@ -481,7 +481,7 @@
     "name": "Add event to Google Calendar",
     "cmdText": "gcalcli add",
     "keywords": "gcal gcalcli gcq",
-    "numParams": -1
+    "numParams": 0
   },
   {
     "name": "Remove first line from file",
