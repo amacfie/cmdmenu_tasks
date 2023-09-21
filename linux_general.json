@@ -271,7 +271,7 @@
   },
   {
     "name": "Pretty print JSON",
-    "cmdText": "cat <json file> | python -m json.tool",
+    "cmdText": "cat <json file> | python3 -m json.tool",
     "numParams": 1
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "name": "Get number of CPU cores",
-    "cmdText": "python -c 'import psutil; print(psutil.cpu_count(logical=False))'",
+    "cmdText": "python3 -c 'import psutil; print(psutil.cpu_count(logical=False))'",
     "keywords": "see show physical",
     "numParams": 0
   }
