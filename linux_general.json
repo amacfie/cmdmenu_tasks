@@ -37,7 +37,7 @@
   {
     "name": "Make bootable USB drive from iso",
     "cmdText": "sudo dd bs=4M if=<iso_file> of=<drive_device> status=progress oflag=sync",
-    "numParams": 0,
+    "numParams": 2,
     "keywords": "stick thumbdrive os"
   },
   {
