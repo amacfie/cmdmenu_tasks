@@ -158,6 +158,12 @@
     "numParams": 0
   },
   {
+    "name": "Clear docker objects",
+    "cmdText": "docker system prune --all --volumes",
+    "keywords": "image docker",
+    "numParams": 0
+  },
+  {
     "name": "Run temporary container and go to bash",
     "cmdText": "docker run -it --rm <image> bash",
     "keywords": "image docker",
