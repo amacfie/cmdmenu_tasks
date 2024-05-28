@@ -29,6 +29,12 @@
     ]
   },
   {
+    "name": "Print random line from file",
+    "cmdText": "shuf -n 1 <file>",
+    "numParams": 1,
+    "keywords": "echo show get select uniform"
+  },
+  {
     "name": "List drive devices",
     "cmdText": "sudo fdisk -l",
     "numParams": 0,
